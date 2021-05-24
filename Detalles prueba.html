@@ -1,0 +1,346 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Biblioteca</title>
+<style type="text/css">
+body {
+	background:#FFC;
+	}
+.contenedor {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #444;
+	margin: auto;
+	height: 640px;
+	width: 950px;
+}
+.contenedor header {
+	background-color: #FFC;
+	height: 160px;
+	width: 100%;
+	background-image: url(img/tope.png);
+}
+.contenedor nav {
+	background-color: #C03;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.contenedor article {
+	float: left;
+	width: 220px;
+	height:320px;
+	overflow:hidden;
+	margin-top: 10px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #FFF;
+	/*transition:0.1s;*/
+}
+.contenedor article:hover {
+	width:640px;
+	height:auto;
+	/*transition:0.1s;*/
+}
+.contenedor aside {
+	height: 240px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.contenedor footer {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #C00;
+	width: 100%;
+	height: 160px;
+	color: #333;
+	background-color: #C03;
+}
+.contenedor nav .menu {
+	background-color: #E10000;
+	margin: 0px;
+	padding: 0px;
+	height: 32px;
+	width: 100%;
+}
+.contenedor nav .menu li {
+	background-color: #E10000;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 25px;
+	float: left;
+	padding-top: 7px;
+	list-style-type: none;
+	font-weight: bold;
+	color: #FFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #CC0000;
+	text-align: center;
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor article h1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.contenedor .articulos {
+	float: left;
+	width: 648px;
+}
+
+.contenedor footer p {
+	float: left;
+	color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 15px;
+	margin-left: 40%;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contenedor footer .pie_pagina .menu ul li {
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	list-style-type: none;
+	color: #333;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.contenedor footer .pie_pagina .redes_sociales a img {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;	
+	/*transition:0.5s;*/
+}
+/*.contenedor footer .pie_pagina .redes_sociales a img:hover {
+	height: 55px;
+	width: 55px;
+	transition:0.5s;
+}*/
+
+.contenedor footer .pie_pagina .derechos {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+.contenedor footer .pie_pagina .redes_sociales a {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 10px;
+}
+.contenedor nav .menu a li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+.contenedor nav .menu a li:hover {
+	color:#FFCB1A;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+
+.contenedor footer .pie_pagina .menu ul li a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina .menu ul li a:hover {
+	color: #FFCB1A;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina {
+	color: #333;
+}
+.contenedor footer .pie_pagina .redes_sociales {
+	color: #333;
+}
+.contenedor article img:hover{
+
+	transition:0.9s;
+	transform:rotate(360deg);
+	border-radius:40%;
+}
+.contenedor article .img {
+	color:#fff;
+	/*transition:0.5s;*/
+}
+.contenedor article .img:hover {
+	color:#444;
+	/*transition:0.5s;*/
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor .articulos article .img p label {
+	color: #FFF;
+	text-decoration: none;
+	background-color: #C00;
+	padding: 20px;
+	border: 2px solid #FFC;
+	transition:0.5s;
+}
+.contenedor .articulos article .img p label:hover {
+	border-radius: 50%;
+	transition: 0.5s;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<a href="index.html" tittle="Inicio"><header>
+</header></a>
+
+<nav>
+	<ul class="menu">
+  	<a href="index.html" title="Inicio"><li>Inicio</li></a>
+    <a href="Nosotros.html"title="Sobre Nosotros"><li>Nosotros</li></a>
+  	<a href="Biblioteca.html" title="ver libros"><li><font color="#FFCB1A">Biblioteca</font></li></a>
+  	<a href="Contacto.html" title="Contactenos"><li>Contacto</li></a>
+   	</ul>
+
+</nav>
+
+<div class="articulos">
+
+<article>
+	<h1>Crimen y Castigo-Fiodor Dostoievski</h1>
+    	<div class="img">
+        
+        <a href="Crimen y castigo.pdf" title="Leer Crimen y Castigo gratis." target="_blank"><img src="img/Crimen y castigo_img.jpg"/></a>
+        
+        <p>Crimen y castigo (1866), considerada por la crítica como la primera obra maestra de Dostoievski, es un profundo análisis psicológico de su protagonista, el joven estudiante Raskolnikov, cuya firme creencia en que los fines humanitarios justifican la maldad le conduce al asesinato de una usurera petersburgués. Pero, desde que comete el crimen, la culpabilidad será una pesadilla constante con la que el estudiante será incapaz de convivir. El estilo enfebrecido y compasivo de Dostoievski sigue con maestría única los recovecos de las contradictorias emociones del estudiante y refleja la lucha extrema que libra con su conciencia mientras deambula por las calles de San Petersburgo.
+        <br /><br />
+        
+Esta novela, una de las más grandes e imperecederas de la literatura universal, contiene dos de los temas característicos de Dostoyevski: la relación entre la culpa y el castigo y la idea de la fuerza redentora del sufrimiento humano, planteando con todo vigor el conflicto entre el Bien y el Mal, ese dualismo ético que es una constante en la obra del autor. Bajo el armazón naturalista de una novela de tesis, subyace una alegoría metafísica y moral. Observa Dostoyevski que el castigo no intimida al criminal, 'pues éste de por sí pide ya moralmente un castigo'. Sin duda, Crimen y Castigo es la obra maestra de su autor.
+<br /><br />
+Las series de televisión y las películas nos muestran cada día los delitos más sofisticados y atroces, así como la respuesta policiaca, médica y judicial ante el delincuente. Pero ¿qué hay de verdad en todo esto? ¿Cómo es la realidad de los criminales, las víctimas, la investigación y la justicia más allá de la ficción? El doctor José Cabrera, afamado psiquiatra especialista en medicina forense, nos explica a partir de casos reales qué es y en qué consiste la criminología, la historia y la sociología del crimen, y se adentra en el oscuro mundo de la psicología del delincuente, así como su castigo legal. Todo ello con su estilo directo y sincero, que convierte este libro en una lectura apasionante para todos.<br /><br /><br /><br /><br /><br /><br /><br />
+	<label>Boton</label>
+        
+        
+    </p> 
+       
+        </div>
+        
+    
+    
+	</article>
+    	<br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br /><br /> <Br />
+	<article>
+	
+    	<h1>El principito-Antoine de Saint-Exupéry</h1>
+	  		<div class="img"><a href="ElPrincipito.pdf" title="Leer El Principito gratis." target="_blank"><img src="img/El principito_img.jpg" width="200" height="200"/></a>
+    
+    			<p>“El Principito” es un cuento contemporáneo cuya trama es surrealista e inventada, pero que tiene personajes reales. El autor quería mostrarnos los problemas de los tiempos modernos. Habla sobre la falta de amor y la búsqueda de uno mismo, así como la soledad de las personas.
+<br /><br />
+Podemos ver la historia como una alegoría que nos lleva a la moraleja de la historia. El mensaje del autor se puede interpretar de muchas maneras diferentes, según el lector. La historia está escrita principalmente para adultos como guía a la visión de los niños sobre el mundo.
+<br /><br />
+El valor de la amistad, el heroísmo como meta y la responsabilidad como motor de la conducta moral encuentran su plasmación definitiva en el mundo que descubre El principito , añorado planeta del que todos los hombres han sido exiliados y al que sólo mediante la fabulación cabe regresar.
+<br /><br />
+La adaptación de una obra literaria al cine es siempre motivo de expectativa, pero a su vez, de aprensión y desconfianza. Uno no puede dejar de preguntarse si la película hará la justicia merecida al texto, o si por el contrario, se quedará lejos del mismo, demeritándolo.
+<br /><br />
+Esta incertidumbre crece aún más cuando la obra en cuestión resulta ser El principito, de Antoine Saint-Exupéry, uno de los pilares de la literatura del siglo XX, un clásico que habita en los corazones de lectores de todas las edades, que a lo largo de varias décadas lo han leído y releído, encontrando cada vez nuevos mensajes y enseñanzas.
+<br /><br />
+Por lo anterior comprendemos que cuando se toma la osada decisión de trasladar al cine un libro tan icónico, se debe tener mucho cuidado en no comprometer su verdadera esencia y en este aspecto el film El Principito, llevado a la pantalla por el director estadounidense Mark Osborne, conocido en el mundo del cine de animación por la cinta Kung fu Panda (2008), logra un oportuno resultado. Por un lado consigue honrar absolutamente el alma de la obra apegándose a ella, haciendo un merecido homenaje a la misma, y por otro presenta una historia paralela tierna y dulce, guiada por una análoga línea de ideas y pensamientos.
+    			</p>    </div>
+
+</article>
+</div>
+
+<div class="asides">
+
+<aside>
+	<img src="img/Leer_img.png" width="300" height="240" />
+</aside>
+
+<aside>
+	<video width="300" height="240" controls>
+    	<source src="img/Leer_video.mp4" type="video/mp4"  />
+    
+    </video>
+</aside>
+
+
+</div>
+
+<footer>
+	<div class="pie_pagina">
+    
+   	  <div class="menu">
+        
+    
+    
+	<ul class="menu">
+  	<li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="Nosotros.html"title="Sobre Nosotros">Nosotros</a></li>
+  	<li><a href="Biblioteca.html" title="ver libros">Biblioteca</a></li>
+  	<li><a href="Contacto.html" title="Contactenos">Contacto</a></li>
+   	</ul>
+
+        
+      </div>
+        
+         <div class="redes_sociales">
+        
+       	  <a href="https://www.facebook.com/Book.Digital.Oficial/" target="_blank" title="Facebook"><img src="img/Facebook_icon.png" alt="">Facebook</a>
+       	  <a href="Contacto.html" title="Correo"><img src="img/gmail_icon.png" alt="">Gmail</a>
+          
+          <a href="https://www.instagram.com/digital_books_oficial/" target="_blank" title="instagram"><img src="img/instagram_icono.png" alt="">Instagram</a>
+          
+        </div>
+        
+        <div class="derechos">
+        
+        Todos los derechos reservados &copy;
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>

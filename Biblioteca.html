@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Biblioteca</title>
+<style type="text/css">
+body {
+	background:#FFC;
+	}
+.contenedor {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #444;
+	margin: auto;
+	height: 640px;
+	width: 950px;
+}
+.contenedor header {
+	background-color: #FFC;
+	height: 160px;
+	width: 100%;
+	background-image: url(img/tope.png);
+}
+.contenedor nav {
+	background-color: #C03;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.contenedor article {
+	float: left;
+	width: 640px;
+	margin-top: 10px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+.contenedor aside {
+	height: 240px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.contenedor footer {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #C00;
+	width: 100%;
+	height: 160px;
+	color: #333;
+	background-color: #C03;
+}
+.contenedor nav .menu {
+	background-color: #E10000;
+	margin: 0px;
+	padding: 0px;
+	height: 32px;
+	width: 100%;
+}
+.contenedor nav .menu li {
+	background-color: #E10000;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 25px;
+	float: left;
+	padding-top: 7px;
+	list-style-type: none;
+	font-weight: bold;
+	color: #FFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #CC0000;
+	text-align: center;
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor article h1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.contenedor .articulos {
+	float: left;
+	width: 648px;
+}
+
+.contenedor footer p {
+	float: left;
+	color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 15px;
+	margin-left: 40%;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contenedor footer .pie_pagina .menu ul li {
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	list-style-type: none;
+	color: #333;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.contenedor footer .pie_pagina .redes_sociales a img {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;	
+	/*transition:0.5s;*/
+}
+/*.contenedor footer .pie_pagina .redes_sociales a img:hover {
+	height: 55px;
+	width: 55px;
+	transition:0.5s;
+}*/
+
+.contenedor footer .pie_pagina .derechos {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+.contenedor footer .pie_pagina .redes_sociales a {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 10px;
+}
+.contenedor nav .menu a li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+.contenedor nav .menu a li:hover {
+	color:#FFCB1A;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+
+.contenedor footer .pie_pagina .menu ul li a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina .menu ul li a:hover {
+	color: #FFCB1A;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina {
+	color: #333;
+}
+.contenedor footer .pie_pagina .redes_sociales {
+	color: #333;
+}
+.contenedor article img:hover{
+
+	transition:0.9s;
+	transform:rotate(360deg);
+	border-radius:40%;
+}
+/*.contenedor article .img {
+	color:#fff;
+	transition:0.5s;
+}
+.contenedor article .img:hover {
+	color:#444;
+	transition:0.5s;
+}*/
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor .articulos article .img p label a {
+	font-weight: bold;
+	color: #F00;
+	text-decoration: none;
+	transition:0.5s;
+}
+.contenedor .articulos article .img p label a:hover {
+	color: #FFCB1A;
+	transition:0.5s;
+	
+}
+.contenedor .asides aside p {
+	font-weight: bold;
+	color: #444;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFF;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #09F;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 3px;
+}
+.contenedor .asides aside .menu li {
+	list-style-type: none;
+	vertical-align: middle;
+	height: 20px;
+	background-color: #06C;
+	text-align: center;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.contenedor .asides aside .menu .1 {
+	background-color: #70d4b4;
+}
+.contenedor .asides aside .menu li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.contenedor .asides #sitios .menu #do {
+	background-color: #70d4b4;
+	height: 20px;
+	padding: 7px;
+	transition:0.5s;
+	margin-bottom:10px;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #do:hover {
+	border-bottom: 10px solid #36BC8D;
+	transition:0.5s;
+}
+.contenedor .asides #sitios .menu #pvas {
+	margin-top:10px;
+	background-color: #F90;
+	padding: 7px;
+	height: 20px;
+	transition:0.5s;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #pvas:hover {
+	transition: 0.5s;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #D78100;
+}
+.contenedor .asides #sitios {
+	background-color: #FFF;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<a href="index.html" tittle="Inicio"><header>
+</header></a>
+
+<nav>
+	<ul class="menu">
+  	<a href="index.html" title="Inicio"><li>Inicio</li></a>
+    <a href="Nosotros.html"title="Sobre Nosotros"><li>Nosotros</li></a>
+  	<a href="Biblioteca.html" title="ver libros"><li><font color="#FFCB1A">Biblioteca</font></li></a>
+  	<a href="Contacto.html" title="Contactenos"><li>Contacto</li></a>
+   	</ul>
+
+</nav>
+
+<div class="articulos">
+
+<article>
+	<h1>Crimen y Castigo-Fiodor Dostoievski</h1>
+    	<div class="img">
+        
+        <a href="Crimen y castigo.pdf" title="Leer Crimen y Castigo gratis." target="_blank"><img src="img/Crimen y castigo_img.jpg"/></a>
+        
+        <p>Crimen y castigo (1866), considerada por la crítica como la primera obra maestra de Dostoievski, es un profundo análisis psicológico de su protagonista, el joven estudiante Raskolnikov, cuya firme creencia en que los fines humanitarios justifican la maldad le conduce al asesinato de una usurera petersburgués. Pero, desde que comete el crimen, la culpabilidad será una pesadilla constante con la que el estudiante será incapaz de convivir. El estilo enfebrecido y compasivo de Dostoievski sigue con maestría única los recovecos de las contradictorias emociones del estudiante y refleja la lucha extrema que libra con su conciencia mientras deambula por las calles de San Petersburgo.
+        <label><a href="masdetalles_crimen.html">Mas detalles...</a> </label>
+        
+  
+     
+     
+    </p> 
+       
+        </div>
+        
+    
+    
+	</article>
+    
+	<article>
+	
+    	<h1>El principito-Antoine de Saint-Exupéry</h1>
+	  		<div class="img"><a href="ElPrincipito.pdf" title="Leer El Principito gratis." target="_blank"><img src="img/El principito_img.jpg" width="200" height="200"/></a>
+    
+    			<p>“El Principito” es un cuento contemporáneo cuya trama es surrealista e inventada, pero que tiene personajes reales. El autor quería mostrarnos los problemas de los tiempos modernos. Habla sobre la falta de amor y la búsqueda de uno mismo, así como la soledad de las personas.
+<br /><br />
+Podemos ver la historia como una alegoría que nos lleva a la moraleja de la historia. El mensaje del autor se puede interpretar de muchas maneras diferentes, según el lector. La historia está escrita principalmente para adultos como guía a la visión de los niños sobre el mundo.<br /><label><a href="masdetalles_principito.html">Mas detalles...</a> </label>
+    			</p>    </div>
+
+</article>
+
+	<article>
+
+	<h1>El monarca de las sombras-Javier Cercas</h1>
+	 <div class="img"> <a href="el_monarca_de_las_sombras.pdf" title="Leer El monarca de las sombtas gratis." target="_blank"><img src="img/El monarca de las sombras_img.jpg" width="200" height="200"/></a>
+    
+    <p>El monarca de las sombras narra la búsqueda del rastro perdido de un muchacho casi anónimo que peleó por una causa injusta y murió en el lado equivocado de la historia. Se llamaba Manuel Mena y en 1936, al estallar la guerra civil, se incorporó al ejército de Franco; dos años después murió combatiendo en la batalla del Ebro, y durante décadas se convirtió en el héroe oficial de su familia. Era tío abuelo de Javier Cercas, quien siempre se negó a indagar en su historia, hasta que se sintió obligado a hacerlo.<label><a href="masdetalles_el_monarca_de_las_sombras.html">Mas detalles...</a> </label></p>    </div>
+
+</article>
+
+</article>
+
+	<article>
+
+	<h1>No me digas que fue un sueño-Terenci Moix</h1>
+	  <div class="img"><a href="nodigas.pdf" title="Leer no digas que fue un sueño gratis." target="_blank"><img src="img/No digas que fue un sueño_img.jpg" width="200" height="200"/></a>
+    
+    <p>Cleopatra llora el fin de su amor en una barca que remonta el Nilo. Ha sido abandonada por su amante, el romano Marco Antonio. En el corazón de ambos todos los conflictos del amor y la pasión, que llevarán a nuevos encuentros que inevitablemente tendrán un destino fatal. No digas que fue un sueño es una gran novela de amor, enmarcada en un período histórico apasionante: los estertores del Egipto amenazado por el imperialismo de la todopoderosa Roma. Pero es, sobre todo, un intento de reivindicar la figura de una de las mujeres más fascinantes de la historia. Cleopatra aparece en esta novela como un personaje original y contradictorio.Ya no es solo una mujer enamorada, sino una mujer entregada por completo a la política, esfera en la que supo cultivar el mestizaje y sacar provecho del mismo para sus fines. Un espléndido retablo sobre todas las fases del amor, sobre la muerte y la caída de los imperios, temas que Terenci Moix plasma con maestría en esta novela.<label><a href="masdetalles_No me digas que fue un sueño-Terenci Moix.html">Mas detalles...</a> </label>
+    </p>  </div>  
+
+</article>
+
+<article>
+
+	<h1>Cien años de soledad-Gabriel Garcia Marquez</h1>
+	  <div class="img"><a href="Cien anos de soledad.pdf" title="Leer Cien años de soledad gratis." target="_blank"><img src="img/Cien años de soledad_img.PNG" width="200" height="200"/></a>
+    
+    <p>Cien años de soledad relata la historia de una aldea imaginaria, Macondo, y de la estirpe de sus fundadores, los Buendía. La novela se presenta dividida en veinte secuencias narrativas que carecen de título e incluso de numeración; por razones de comodidad, en este resumen numeramos y llamamos «capítulos» a cada una de estas unidades.
+    <br /><br />
+    Si bien es cierto que los frecuentes saltos hacia atrás y hacia adelante caracterizan la técnica narrativa de Cien años de soledad, hay que decir que tales retrospecciones y anticipaciones se producen principalmente en el interior de cada secuencia; los distintos capítulos refieren los sucesos en orden cronológico, y pueden agruparse atendiendo a los acontecimientos de fondo que marcan la vida de la aldea y al protagonismo que adquieren ciertos personajes o generaciones.<label><a href="masdetalles_Cien años de soledadx.html">Mas detalles...</a> </label>
+    </p>  </div>  
+
+</article>
+
+<article>
+
+	<h1>El retrato de Dorian Gray-Oscar Wilde</h1>
+	  <div class="img"><a href="El retrato de Dorian Grey.pdf" title="Leer El retrato de Dorian Grey gratis." target="_blank"><img src="img/el retrato_img.jpg" width="200" height="200"/></a>
+    
+    <p>Basil Hallward es un artista que queda enormemente impresionado por la belleza estética de un joven llamado Dorian Gray y comienza a admirarlo. Basil pinta un retrato del joven. Charlando en el jardín de Basil, Dorian conoce a un amigo de Basil y empieza a cautivarse por la visión del mundo de Lord Henry. Exponiendo un nuevo tipo de hedonismo, Lord Henry indica que «lo único que vale la pena en la vida es la belleza, y la satisfacción de los sentidos». Al darse cuenta de que un día su belleza se desvanecerá, Dorian desea tener siempre la edad de cuando Basil le pintó en el cuadro. Mientras él mantiene para siempre la misma apariencia del cuadro, la figura retratada envejece por él. Su búsqueda del placer lo lleva a una serie de actos de lujuria; pero el retrato sirve como un recordatorio de los efectos de su alma, con cada pecado la figura se va desfigurando y envejeciendo.<label><a href="masdetalles_El retrato de Dorian Gray-Oscar Wilde.html">Mas detalles...</a> </label>
+    </p>  </div>  
+
+</article>
+
+<article>
+
+	<h1>La vida es un sueño-Pedro Calderón de la Barca</h1>
+	  <div class="img"><a href="VidaSue.pdf" title="Leer la vida es un sueño gratis." target="_blank"><img src="img/La vida es un sueño_img.jpg" width="200" height="200"/></a>
+    
+    <p>La vieja historia de un joven príncipe desterrado por el padre que desea evitar el fatal vaticinio de las estrellas es el punto de partida de la obra maestra de Calderón, publicada en la Primera parte de sus comedias (1636). Pocas piezas del teatro áureo lograron ensamblar una riquez de pensamiento tan sugestiva y compleja con una técnica tan depurada en la articulación de la trama y el manejo de la lengua poética.<label><a href="masdetalles_La vida es un sueño.html">Mas detalles...</a> </label>
+    </p>  </div>  
+
+</article>
+
+<article>
+
+	<h1>El caballero de la armadura oxidada-Robert Fisher</h1>
+	  <div class="img"><a href="El caballero de la armadura oxidada.pdf" title="Leer El caballero de la armadura oxidada gratis." target="_blank"><img src="img/El caballero de la armadura oxidada_img.jpg" width="200" height="200"/></a>
+    
+    <p>El protagonista, un caballero egocéntrico, que no consigue comprender y valorar con profundidad lo que tiene, es descuidado sin querer con las cosas y las personas que lo rodean. De esta forma se va encerrando poco a poco dentro de su armadura, hasta que ésta deja de brillar y se oxida; cuando se da cuenta, ya no puede quitársela. Prisionero de sí mismo, emprende un viaje por tres distintos castillos a través del "sendero de la verdad", mientras se va dando cuenta de muchas cosas que nunca había notado, reflexiona y así va siendo poco a poco mejor persona y al final logra deshacerse de la armadura que le había imposibilitado abrirse al mundo.<label><a href="masdetalles_El caballero de la armadura oxidada.html">Mas detalles...</a> </label>
+    </p>  </div>  
+
+</article>
+
+<article>
+
+	<h1>El Montero-Pedro Francisco Bonò</h1>
+	  <div class="img"><a href="pedro-francisco-bon-el-montero.pdf" title="Leer El montero gratis." target="_blank"><img src="img/El montero_img.PNG" width="200" height="200"/></a>
+    
+    <p>La novela El Montero de Pedro Francisco Bonó (1828-1906) es el cuadro de costumbres representativo del campo dominicano, añoranzas, luchas y pasiones de caudillos. Con El Montero (1856) se empieza a conocer en Santo Domingo y en todo el resto de la América hispánica da tradición de costumbres y mentalidades campesinas, debido a la insistencia de Bonó por la descripción de lo que es la vida montuna, la naturaleza del campo dominicano y las relaciones entre el personaje, el alcance de valores, costumbres y decisiones políticas que se expresan en el universo rural dominicano.<label><a href="masdetalles_El Montero-Pedro Francisco Bonò.html">Mas detalles...</a> </label>
+<br /><br />
+<!--En algunos momentos El Montero se convierte en relato patriótico y el ideal dominicano se observa como ligado al suelo, a la tierra, a los luchadores del campo y a sus hazañas costumbristas y guerreras.-->
+    </p>  </div>  
+
+</article>
+
+<article>
+	<h1>Saga de crepusculo-Stephenie Meyer</h1>
+	<h2>Crepusculo-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="Crepusculo.pdf"title="Leer Crepusculo gratis." target="_blank"><img src="img/Crepusculo_img.jpg" width="200" height="200"/></a>
+    
+    <p>Cuando Isabella Swan se muda a Forks, una pequeña localidad del estado de Washington en la que nunca deja de llover, piensa que es lo más aburrido que le podía haber ocurrido en la vida. Pero su vida da un giro excitante y aterrador una vez que se encuentra con el misterioso y seductor Edward Cullen. Hasta ese momento, Edward se las ha arreglado para mantener en secreto su identidad vampírica, pero ahora nadie se encuentra a salvo, y sobre todo Isabella, la persona a quien más quiere Edward...<label><a href="masdetalles_Crepusculo.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+
+
+</article>
+
+
+<article>
+
+	<h2>Sol de medianoche-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="soldemedianoche.pdf"title="Leer Sol de media noche gratis." target="_blank"><img src="img/Sol de medianoche_img.jpg" width="200" height="200"/></a>
+    
+    <p> Se trata de un proyecto sin finalizar en el que Stephenie lleva trabajando desde hace tiempo. Según ella es la misma historia que ya conocemos pero desde el punto de vista de Edward. Del vampiro.
+Mientras Bella disfruta de su compañía desde el primer instante en que le ve, él en cambio se debate en un horrible sufrimiento mientras pasa los peores momentos de su larga vida. Desde que ella aparece en el pequeño pueblo de Forks, su vida da un giro aún más radical que el de Bella y eso es lo que la escritora quiere darnos a conocer, pues, según sus palabras textuales: "La historia de Edward demandaba un libro sólo para él".
+Al principio se trataba de un mero ensayo, pero con el paso del tiempo ha terminado decidiendo que lo escribirá para publicarlo, como un libro anexo a la serie de Crepúsculo.<label><a href="masdetalles_Sol de media noche.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+<article>
+
+	<h2>Amanecer-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="Amanecer-Stephenie Meyer.pdf"title="Leer Amanecer gratis." target="_blank"><img src="img/Amanecer_img.jpg" width="200" height="200"/></a>
+    
+    <p>Para Bella Swan, estar perdidamente enamorada de un vampiro es tanto una pesadilla como una fantasía, que se entremezcla peligrosamente con la realidad. La intensa pasión que siente por Edward Cullen la empuja en una dirección, mientras que su profunda conexión con el licántropo Jacob Black la lleva en otra. Bella ha sobrellevado un tumultuoso año colmado de tentaciones, pérdida y de lucha para llegar a un punto crucial definitivo. La inminente decisión que debe tomar entre unirse al oscuro pero seductor mundo de los inmortales o buscar una vida plena como humana se ha convertido en una amenaza de la que pende la supervivencia de dos tribus. 
+Bella ya ha tomado su decisión; una alarmante cadena de sucedos sin precedentes está a punto de tener lugar con consecuencias potencialmente desvastadoras y misteriosas. Justo cuando los endebles jirones de la vida de Bella parecen estar listos para sanar y unirse de nuevo, ¿podrán quedar destruidos.. para siempre?<label><a href="masdetalles_Amanecer.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+<article>
+
+	<h2>Eclipse-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="Eclipse-Stephenie Meyer.pdf" title="Leer Eclipse gratis." target="_blank"><img src="img/Eclipse_img.jpg" width="200" height="200"/></a>
+    
+    <p>Mientras Seattle es arrasada por una misteriosa oleada de asesinatos, y una malvada vampiresa continúa su búsqueda de venganza, Bella se encuentra de nuevo en peligro. En medio de todo ese caos, se ve obligada a elegir entre su amor por Edward o su amistad con Jacob –y sabe que su decisión es crucial y puede reavivar la antigua lucha entre los vampiros y los hombres-lobo. 
+Con su graduación aproximándose a pasos agigantados, Bella tiene otra decisión que tomar: la vida o la muerte. Pero, ¿cuál es la correcta?<label><a href="masdetalles_Eclipse.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+<article>
+
+	<h2>Luna nueva-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="Luna nueva-Stephenie Meyer.pdf" title="Leer luna nueva-stephenie meyer gratis." target="_blank"><img src="img/Luna nueva_img.jpg" width="200" height="200"/></a>
+    
+    <p>
+    Para Bella Swan, hay una cosa más importante que su propia vida: Edward Cullen. Pero enamorarse de un vampiro es más peligroso de lo que Bella nunca podría haber imaginado. Edward ya ha rescatado a Bella de las garras de un diabólico vampiro, pero ahora, a medida que su arriesgada relación amenaza todo lo que es cercano y querido para ellos, se dan cuenta de que sus problemas puede que sólo estén empezando...<label><a href="masdetalles_Luna nueva-Stephenie Meyer.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+<article>
+
+	<h2>La segunda vida de Bree Tanner-Stephenie Meyer</h2>
+    
+	  <div class="img">
+      
+      <a href="La Segunda Vida de Bree Tanner - Stephenie Meyer.pdf"title="Leer La segunda vida de Bree Tanner gratis." target="_blank"><img src="img/La segunda vida de Bree Tanner_img.jpg" width="200" height="200"/></a>
+    
+    <p> 
+    La segunda vida de Bree Tanner es la fascinante historia de este vampiro y del lado más oscuro del mundo en el que habita. La novela recrea el nacimiento del nuevo ejército de vampiros que tiene como única misión ir al encuentro de la indefensa Bella Swan y de la indestructible familia Cullen.
+Bree Tanner no sólo es una figura prominente en el libro de Eclipse, sino que también lo será en la película basada en este volumen de la Saga Crepúsculo, producida por Summit Entertainment. “Stephenie Meyer fue muy generosa permitiéndome leer el extracto de esta novela mientras preparábamos la película”, dice el director David Slade. “Disfruté a fondo de esta novela, que además nos sirvió como fuente de inspiración para encontrar las localizaciones de las escenas y comenzar el rodaje. Creo que los fans van a deleitarse con el nacimiento de un vampiro, sus fascinantes características y su propia historia”.<label><a href="masdetalles_La segunda vida de bree tanner.html">Mas detalles...</a> </label>
+    </p>  
+    
+    </div>  
+
+</article>
+
+</div>
+
+<div class="asides">
+
+<aside>
+	<img src="img/Leer_img.png" width="300" height="240" />
+</aside>
+
+<aside>
+	<video width="300" height="240" controls>
+    	<source src="img/Leer_video.mp4" type="video/mp4"  />
+    
+    </video>
+</aside>
+</aside>
+
+<aside id="sitios">
+	<p>Sitios Relacionados:</p>
+	<ul class="menu">
+ <li id="do"><a href="https://hyslerodriguez123.000webhostapp.com" title="2do A Inf" target="_blank">2do A informatica</a></li>
+        
+        <li id="pvas"><a href="https://pvas.gnomio.com" title="politecnico vicente aquilino santos" target="_blank">P.V.A.S</a></li>
+        
+    	
+    </ul>
+
+</aside>
+
+
+
+
+</div>
+
+<footer>
+	<div class="pie_pagina">
+    
+   	  <div class="menu">
+        
+    
+    
+	<ul class="menu">
+  	<li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="Nosotros.html"title="Sobre Nosotros">Nosotros</a></li>
+  	<li><a href="Biblioteca.html" title="ver libros">Biblioteca</a></li>
+  	<li><a href="Contacto.html" title="Contactenos">Contacto</a></li>
+   	</ul>
+
+        
+      </div>
+        
+         <div class="redes_sociales">
+        
+       	  <a href="https://www.facebook.com/Book.Digital.Oficial/" target="_blank" title="Facebook"><img src="img/Facebook_icon.png" alt="">Facebook</a>
+       	  <a href="Contacto.html" title="Correo"><img src="img/gmail_icon.png" alt="">Gmail</a>
+          
+          <a href="https://www.instagram.com/digital_books_oficial/" target="_blank" title="instagram"><img src="img/instagram_icono.png" alt="">Instagram</a>
+          
+        </div>
+        
+        <div class="derechos">
+        
+        Todos los derechos reservados &copy;
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>

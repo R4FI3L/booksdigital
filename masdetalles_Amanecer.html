@@ -1,0 +1,391 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Biblioteca</title>
+<style type="text/css">
+body {
+	background:#FFC;
+	}
+.contenedor {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #444;
+	margin: auto;
+	height: 640px;
+	width: 950px;
+}
+.contenedor header {
+	background-color: #FFC;
+	height: 160px;
+	width: 100%;
+	background-image: url(img/tope.png);
+}
+.contenedor nav {
+	background-color: #C03;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.contenedor article {
+	float: left;
+	width: 640px;
+	margin-top: 10px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+.contenedor aside {
+	height: 240px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.contenedor footer {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #C00;
+	width: 100%;
+	height: 160px;
+	color: #333;
+	background-color: #C03;
+}
+.contenedor nav .menu {
+	background-color: #E10000;
+	margin: 0px;
+	padding: 0px;
+	height: 32px;
+	width: 100%;
+}
+.contenedor nav .menu li {
+	background-color: #E10000;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 25px;
+	float: left;
+	padding-top: 7px;
+	list-style-type: none;
+	font-weight: bold;
+	color: #FFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #CC0000;
+	text-align: center;
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor article h1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.contenedor .articulos {
+	float: left;
+	width: 648px;
+}
+
+.contenedor footer p {
+	float: left;
+	color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 15px;
+	margin-left: 40%;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contenedor footer .pie_pagina .menu ul li {
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	list-style-type: none;
+	color: #333;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.contenedor footer .pie_pagina .redes_sociales a img {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;	
+	/*transition:0.5s;*/
+}
+/*.contenedor footer .pie_pagina .redes_sociales a img:hover {
+	height: 55px;
+	width: 55px;
+	transition:0.5s;
+}*/
+
+.contenedor footer .pie_pagina .derechos {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+.contenedor footer .pie_pagina .redes_sociales a {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 10px;
+}
+.contenedor nav .menu a li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+.contenedor nav .menu a li:hover {
+	color:#FFCB1A;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+
+.contenedor footer .pie_pagina .menu ul li a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina .menu ul li a:hover {
+	color: #FFCB1A;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina {
+	color: #333;
+}
+.contenedor footer .pie_pagina .redes_sociales {
+	color: #333;
+}
+.contenedor article img:hover{
+
+	transition:0.9s;
+	transform:rotate(360deg);
+	border-radius:40%;
+}
+/*.contenedor article .img {
+	color:#fff;
+	transition:0.5s;
+}
+.contenedor article .img:hover {
+	color:#444;
+	transition:0.5s;
+}*/
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor .asides aside p {
+	font-weight: bold;
+	color: #444;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFF;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #09F;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 3px;
+}
+.contenedor .asides aside .menu li {
+	list-style-type: none;
+	vertical-align: middle;
+	height: 20px;
+	background-color: #06C;
+	text-align: center;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.contenedor .asides aside .menu .1 {
+	background-color: #70d4b4;
+}
+.contenedor .asides aside .menu li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.contenedor .asides #sitios .menu #do {
+	background-color: #70d4b4;
+	height: 20px;
+	padding: 7px;
+	transition:0.5s;
+	margin-bottom:10px;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #do:hover {
+	border-bottom: 10px solid #36BC8D;
+	transition:0.5s;
+}
+.contenedor .asides #sitios .menu #pvas {
+	margin-top:10px;
+	background-color: #F90;
+	padding: 7px;
+	height: 20px;
+	transition:0.5s;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #pvas:hover {
+	transition: 0.5s;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #D78100;
+}
+.contenedor .asides #sitios {
+	background-color: #FFF;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<a href="index.html" tittle="Inicio"><header>
+</header></a>
+
+<nav>
+	<ul class="menu">
+  	<a href="index.html" title="Inicio"><li>Inicio</li></a>
+    <a href="Nosotros.html"title="Sobre Nosotros"><li>Nosotros</li></a>
+  	<a href="Biblioteca.html" title="ver libros"><li><font color="#FFCB1A">Biblioteca</font></li></a>
+  	<a href="Contacto.html" title="Contactenos"><li>Contacto</li></a>
+   	</ul>
+
+</nav>
+
+<div class="articulos">
+
+<article>
+	<h1>Amanecer-Stephenie Meyer</h1>
+    	<div class="img">
+        
+        <a href="Amanecer.pdf"title="Leer amanecer gratis." target="_blank"><img src="img/Amanecer_img.jpg"/></a>
+        
+        <p>
+      Amanecer (en inglés Breaking Dawn) es la cuarta novela de la saga Crepúsculo, escrita por Stephenie Meyer y la última narrada desde la perspectiva de Bella Swan. A diferencia de sus predecesoras (Crepúsculo, Luna nueva y Eclipse) Amanecer está contada por Bella Swan y Jacob Black.
+<br /><br />
+Continúa narrando la historia de Isabella Marie Swan en la que se casa con Edward Cullen. Durante su luna de miel en la isla de Esme la pareja tienen una noche de amor , días después Bella se da cuenta de que está embarazada, pero su embarazo es anormal, tiene dentro de su vientre un "niño especial" mitad vampiro y mitad humano, el cual es temido ya que posee grandes poderes. El niño la está matando al consumirla desde dentro, más rápido de lo que todos creían. Edward quería deshacerse del niño, pero gracias a que pudo escuchar los pensamientos de su hija y así saber que la niña ama a sus padres, termina por cogerle cariño
+<br /><br />
+Por su parte, Jacob piensa irónicamente que el bebé quiere a alguien a quien encajarle los dientes. Edward quiso probar si la teoría de Jacob era cierta, dándole de beber sangre humana a Bella. Para asombro de todos, se calmó la sed del nonato una vez que Bella bebió sangre humana. Con el tiempo, Bella empieza a recuperar su fuerza. Bella decide que si es niño le pondría Edward Jacob y si es niña Renesmee.
+<br /><br />
+Inesperadamente, Bella se pone de parto luego de elegir el nombre del bebé, sin que Carlisle se encuentre presente; debido a esto, Edward y Jacob deciden hacer la cesárea ellos mismos. Nace la niña, pero unos minutos después Bella muere por sus heridas, y entonces Edward inyecta su veneno de vampiro en Bella, y la muerde para convertirla. Sin embargo, ya pasados varios minutos al ver que no reaccionaba, la dieron por muerta. Edward y Jacob se deprimen terriblemente por la muerte de Bella, y comienzan a prepararla para sepultarla. Pero Bella, después de haber estado aparentemente muerta durante bastante tiempo, consigue revivir completamente recuperada y transformada ya en vampiro.
+<br /><br />
+Por ser Bella ya un vampiro, los Cullen la alejan de su hija durante un tiempo, pues temen que al ser su hija mitad humana pudo haberla matado para beberle su sangre.
+
+Los Cullen le regalan una cabaña a Bella por su decimonoveno cumpleaños humano, en donde puede vivir junto a Edward y su hija. Al día siguiente, le llevan a conocer a Renesmee, y ve que su crecimiento está muy acelerado, ya que solo tenía dos días y parecía tener ya tres meses. Pasaron los días y Bella se enteró de que su mejor amigo Jacob se había imprimado de su hija, cuando éste había intentado matarla; (imprimar quiere decir querer para siempre a alguien desde que nació) esto le causó a Bella mucho enojo contra Jacob, pero fue aceptándolo con el paso del tiempo.
+
+
+
+
+    </p> 
+       
+        </div>
+        
+    
+    
+	</article>
+    
+</div>
+
+<div class="asides">
+
+<aside>
+	<img src="img/Leer_img.png" width="300" height="240" />
+</aside>
+
+<aside>
+	<video width="300" height="240" controls>
+    	<source src="img/Leer_video.mp4" type="video/mp4"  />
+    
+    </video>
+</aside>
+</aside>
+
+<aside id="sitios">
+	<p>Sitios Relacionados:</p>
+	<ul class="menu">
+        <li id="do"><a href="https://hyslerodriguez123.000webhostapp.com" title="2do A Inf" target="_blank">2do A informatica</a></li>
+        <li id="pvas"><a href="https://pvas.gnomio.com" title="politecnico vicente aquilino santos" target="_blank">P.V.A.S</a></li>
+        
+    	
+    </ul>
+
+</aside>
+
+
+
+</div>
+
+<footer>
+	<div class="pie_pagina">
+    
+   	  <div class="menu">
+        
+    
+    
+	<ul class="menu">
+  	<li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="Nosotros.html"title="Sobre Nosotros">Nosotros</a></li>
+  	<li><a href="Biblioteca.html" title="ver libros">Biblioteca</a></li>
+  	<li><a href="Contacto.html" title="Contactenos">Contacto</a></li>
+   	</ul>
+
+        
+      </div>
+        
+         <div class="redes_sociales">
+        
+       	  <a href="https://www.facebook.com/Book.Digital.Oficial/" target="_blank" title="Facebook"><img src="img/Facebook_icon.png" alt="">Facebook</a>
+       	  <a href="Contacto.html" title="Correo"><img src="img/gmail_icon.png" alt="">Gmail</a>
+          
+          <a href="https://www.instagram.com/digital_books_oficial/" target="_blank" title="instagram"><img src="img/instagram_icono.png" alt="">Instagram</a>
+          
+        </div>
+        
+        <div class="derechos">
+        
+        Todos los derechos reservados &copy;
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>

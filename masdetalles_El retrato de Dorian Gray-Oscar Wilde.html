@@ -1,0 +1,390 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Biblioteca</title>
+<style type="text/css">
+body {
+	background:#FFC;
+	}
+.contenedor {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #444;
+	margin: auto;
+	height: 640px;
+	width: 950px;
+}
+.contenedor header {
+	background-color: #FFC;
+	height: 160px;
+	width: 100%;
+	background-image: url(img/tope.png);
+}
+.contenedor nav {
+	background-color: #C03;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.contenedor article {
+	float: left;
+	width: 640px;
+	margin-top: 10px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+.contenedor aside {
+	height: 240px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.contenedor footer {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #C00;
+	width: 100%;
+	height: 160px;
+	color: #333;
+	background-color: #C03;
+}
+.contenedor nav .menu {
+	background-color: #E10000;
+	margin: 0px;
+	padding: 0px;
+	height: 32px;
+	width: 100%;
+}
+.contenedor nav .menu li {
+	background-color: #E10000;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 25px;
+	float: left;
+	padding-top: 7px;
+	list-style-type: none;
+	font-weight: bold;
+	color: #FFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #CC0000;
+	text-align: center;
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor article h1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.contenedor .articulos {
+	float: left;
+	width: 648px;
+}
+
+.contenedor footer p {
+	float: left;
+	color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 15px;
+	margin-left: 40%;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contenedor footer .pie_pagina .menu ul li {
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	list-style-type: none;
+	color: #333;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.contenedor footer .pie_pagina .redes_sociales a img {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;	
+	/*transition:0.5s;*/
+}
+/*.contenedor footer .pie_pagina .redes_sociales a img:hover {
+	height: 55px;
+	width: 55px;
+	transition:0.5s;
+}*/
+
+.contenedor footer .pie_pagina .derechos {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+.contenedor footer .pie_pagina .redes_sociales a {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 10px;
+}
+.contenedor nav .menu a li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+.contenedor nav .menu a li:hover {
+	color:#FFCB1A;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+
+.contenedor footer .pie_pagina .menu ul li a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina .menu ul li a:hover {
+	color: #FFCB1A;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina {
+	color: #333;
+}
+.contenedor footer .pie_pagina .redes_sociales {
+	color: #333;
+}
+.contenedor article img:hover{
+
+	transition:0.9s;
+	transform:rotate(360deg);
+	border-radius:40%;
+}
+/*.contenedor article .img {
+	color:#fff;
+	transition:0.5s;
+}
+.contenedor article .img:hover {
+	color:#444;
+	transition:0.5s;
+}*/
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor .asides aside p {
+	font-weight: bold;
+	color: #444;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFF;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #09F;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 3px;
+}
+.contenedor .asides aside .menu li {
+	list-style-type: none;
+	vertical-align: middle;
+	height: 20px;
+	background-color: #06C;
+	text-align: center;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.contenedor .asides aside .menu .1 {
+	background-color: #70d4b4;
+}
+.contenedor .asides aside .menu li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.contenedor .asides #sitios .menu #do {
+	background-color: #70d4b4;
+	height: 20px;
+	padding: 7px;
+	transition:0.5s;
+	margin-bottom:10px;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #do:hover {
+	border-bottom: 10px solid #36BC8D;
+	transition:0.5s;
+}
+.contenedor .asides #sitios .menu #pvas {
+	margin-top:10px;
+	background-color: #F90;
+	padding: 7px;
+	height: 20px;
+	transition:0.5s;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #pvas:hover {
+	transition: 0.5s;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #D78100;
+}
+.contenedor .asides #sitios {
+	background-color: #FFF;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<a href="index.html" tittle="Inicio"><header>
+</header></a>
+
+<nav>
+	<ul class="menu">
+  	<a href="index.html" title="Inicio"><li>Inicio</li></a>
+    <a href="Nosotros.html"title="Sobre Nosotros"><li>Nosotros</li></a>
+  	<a href="Biblioteca.html" title="ver libros"><li><font color="#FFCB1A">Biblioteca</font></li></a>
+  	<a href="Contacto.html" title="Contactenos"><li>Contacto</li></a>
+   	</ul>
+
+</nav>
+
+<div class="articulos">
+
+<article>
+	<h1>El retrato de Dorian Gray-Oscar Wilde</h1>
+    	<div class="img">
+        
+        <a href="" title="LeerEl retrato de Dorian Gray-Oscar Wilde gratis." target="_blank"><img src="img/el retrato_img.jpg"/></a>
+        
+        <p>
+        El retrato de Dorian Gray o El cuadro de Dorian Gray (original en inglés: The Picture of Dorian Gray) es una novela escrita por el autor irlandés Oscar Wilde. 
+<br /><br />
+Originalmente publicada el 20 de junio de 1890,1​ como cuento en Lippincott's Monthly Magazine, una revista mensual literaria estadounidense, Wilde revisaría la obra, haría varias modificaciones y agregaría nuevos capítulos para su publicación posterior como novela, su única obra publicada como novela. La versión modificada fue publicada por Ward Lock & Co en abril de 1891.
+<br /><br />
+Ward Lock & Co reeditó el libro en 1891 y nuevamente en 1895. Luego, Charles Carrington compró los derechos de la obra y la editó en 1901, 1905 y 1908. En 1908 y 1909, aparece una edición ilustrada por Paul Thiriat, para Brendon & Son, Ltd. 
+<br /><br />
+En 1913, 1916 y 1918, la novela es editada por Simkin, Marshall, Hamilton, Kent & Co., Ltd., con una nota bibliográfica sobre las ediciones citadas y una advertencia sobre la existencia de ediciones piratas que se caracterizaban por la ausencia del prefacio y por la "mutilación de muchos pasajes".
+<br /><br />
+El retrato de Dorian Gray es considerada una de las últimas obras clásicas de la novela de terror gótica con una fuerte temática faustiana, además muestra un pintor con afecto íntimo y directo con el personaje principal.
+<br /><br />
+
+El libro causó controversia cuando fue publicado por primera vez; sin embargo, es considerado en la actualidad como «uno de los clásicos modernos de la literatura occidental.»
+<br /><br />
+La novela mezcla realidad y fantasía en su estructura, a la manera propia de los cuentos moralistas como «El príncipe feliz» o «El ruiseñor y la rosa» que escribía Wilde por aquel entonces. Cuenta la obsesión de un hombre atractivo y exitoso por mantenerse siempre joven, después de que un amigo, el pintor Basil Hallward, le retratara soberbiamente en un lienzo. Su deseo se convierte en tragedia tras darse cuenta de que su petición ha sido en efecto escuchada, lanzándose así en un espiral de odio y vicio.
+
+    </p> 
+       
+        </div>
+        
+    
+    
+	</article>
+    
+</div>
+
+<div class="asides">
+
+<aside>
+	<img src="img/Leer_img.png" width="300" height="240" />
+</aside>
+
+<aside>
+	<video width="300" height="240" controls>
+    	<source src="img/Leer_video.mp4" type="video/mp4"  />
+    
+    </video>
+</aside>
+
+</aside>
+
+<aside id="sitios">
+	<p>Sitios Relacionados:</p>
+	<ul class="menu">
+       <li id="do"><a href="https://hyslerodriguez123.000webhostapp.com" title="2do A Inf" target="_blank">2do A informatica</a></li>
+        
+        <li id="pvas"><a href="https://pvas.gnomio.com" title="politecnico vicente aquilino santos" target="_blank">P.V.A.S</a></li>
+        
+    	
+    </ul>
+
+</aside>
+</div>
+
+<footer>
+	<div class="pie_pagina">
+    
+   	  <div class="menu">
+        
+    
+    
+	<ul class="menu">
+  	<li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="Nosotros.html"title="Sobre Nosotros">Nosotros</a></li>
+  	<li><a href="Biblioteca.html" title="ver libros">Biblioteca</a></li>
+  	<li><a href="Contacto.html" title="Contactenos">Contacto</a></li>
+   	</ul>
+
+        
+      </div>
+        
+         <div class="redes_sociales">
+        
+       	  <a href="https://www.facebook.com/Book.Digital.Oficial/" target="_blank" title="Facebook"><img src="img/Facebook_icon.png" alt="">Facebook</a>
+       	  <a href="Contacto.html" title="Correo"><img src="img/gmail_icon.png" alt="">Gmail</a>
+          
+          <a href="https://www.instagram.com/digital_books_oficial/" target="_blank" title="instagram"><img src="img/instagram_icono.png" alt="">Instagram</a>
+          
+        </div>
+        
+        <div class="derechos">
+        
+        Todos los derechos reservados &copy;
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>

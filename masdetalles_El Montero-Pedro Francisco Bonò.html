@@ -1,0 +1,386 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Biblioteca</title>
+<style type="text/css">
+body {
+	background:#FFC;
+	}
+.contenedor {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	color: #444;
+	margin: auto;
+	height: 640px;
+	width: 950px;
+}
+.contenedor header {
+	background-color: #FFC;
+	height: 160px;
+	width: 100%;
+	background-image: url(img/tope.png);
+}
+.contenedor nav {
+	background-color: #C03;
+	height: 40px;
+	width: 100%;
+	margin-top: 10px;
+}
+.contenedor article {
+	float: left;
+	width: 640px;
+	margin-top: 10px;
+	padding: 2px;
+	border-radius: 10px;
+	background-color: #FFF;
+}
+.contenedor aside {
+	height: 240px;
+	width: 300px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 2px;
+}
+.contenedor footer {
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+	vertical-align: middle;
+	border: 1px solid #C00;
+	width: 100%;
+	height: 160px;
+	color: #333;
+	background-color: #C03;
+}
+.contenedor nav .menu {
+	background-color: #E10000;
+	margin: 0px;
+	padding: 0px;
+	height: 32px;
+	width: 100%;
+}
+.contenedor nav .menu li {
+	background-color: #E10000;
+	text-align: center;
+	vertical-align: middle;
+	width: 230px;
+	height: 25px;
+	float: left;
+	padding-top: 7px;
+	list-style-type: none;
+	font-weight: bold;
+	color: #FFF;
+	border-left-width: 5px;
+	border-left-style: solid;
+	border-left-color: #CC0000;
+	text-align: center;
+}
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor article h1 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333;
+}
+.contenedor .articulos {
+	float: left;
+	width: 648px;
+}
+
+.contenedor footer p {
+	float: left;
+	color: #CCC;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top: 15px;
+	margin-left: 40%;
+	padding: 0px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+.contenedor footer .pie_pagina .menu ul li {
+	text-align: center;
+	display: inline-block;
+	/*float: left;*/
+	list-style-type: none;
+	color: #333;
+	transition: 0.5s;
+	vertical-align: middle;
+	margin-bottom: 10px;
+}
+.contenedor footer .pie_pagina .redes_sociales a img {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;	
+	/*transition:0.5s;*/
+}
+/*.contenedor footer .pie_pagina .redes_sociales a img:hover {
+	height: 55px;
+	width: 55px;
+	transition:0.5s;
+}*/
+
+.contenedor footer .pie_pagina .derechos {
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 20px;
+	color: #FFF;
+	margin-bottom: 15px;
+}
+.contenedor footer .pie_pagina .redes_sociales a {
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: none;
+	color: #FFF;
+	margin-left: 10px;
+}
+.contenedor nav .menu a li {
+	color: #FFF;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+.contenedor nav .menu a li:hover {
+	color:#FFCB1A;
+	text-decoration: none;
+	font-weight: bold;
+	transition:0.5s;	
+}
+
+
+.contenedor footer .pie_pagina .menu ul li a {
+	color: #FFF;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina .menu ul li a:hover {
+	color: #FFCB1A;
+	text-decoration: underline;
+	font-weight: bold;
+	transition:0.5s;
+}
+.contenedor footer .pie_pagina {
+	color: #333;
+}
+.contenedor footer .pie_pagina .redes_sociales {
+	color: #333;
+}
+.contenedor article img:hover{
+
+	transition:0.9s;
+	transform:rotate(360deg);
+	border-radius:40%;
+}
+/*.contenedor article .img {
+	color:#fff;
+	transition:0.5s;
+}
+.contenedor article .img:hover {
+	color:#444;
+	transition:0.5s;
+}*/
+.contenedor article img {
+	float: left;
+	padding: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	margin-left: 5px;
+	width:200px;
+	height:200px;
+	transition:0.5s;
+}
+.contenedor .asides aside p {
+	font-weight: bold;
+	color: #444;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #FFF;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #09F;
+	padding-right: 60px;
+	padding-left: 60px;
+	padding-bottom: 3px;
+}
+.contenedor .asides aside .menu li {
+	list-style-type: none;
+	vertical-align: middle;
+	height: 20px;
+	background-color: #06C;
+	text-align: center;
+	margin-right: 30px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.contenedor .asides aside .menu .1 {
+	background-color: #70d4b4;
+}
+.contenedor .asides aside .menu li a {
+	font-weight: bold;
+	color: #FFF;
+	text-decoration: none;
+}
+.contenedor .asides #sitios .menu #do {
+	background-color: #70d4b4;
+	height: 20px;
+	padding: 7px;
+	transition:0.5s;
+	margin-bottom:10px;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #do:hover {
+	border-bottom: 10px solid #36BC8D;
+	transition:0.5s;
+}
+.contenedor .asides #sitios .menu #pvas {
+	margin-top:10px;
+	background-color: #F90;
+	padding: 7px;
+	height: 20px;
+	transition:0.5s;
+	border-bottom:0px solid #FFC;
+}
+.contenedor .asides #sitios .menu #pvas:hover {
+	transition: 0.5s;
+	border-bottom-width: 10px;
+	border-bottom-style: solid;
+	border-bottom-color: #D78100;
+}
+.contenedor .asides #sitios {
+	background-color: #FFF;
+}
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+
+<a href="index.html" tittle="Inicio"><header>
+</header></a>
+
+<nav>
+	<ul class="menu">
+  	<a href="index.html" title="Inicio"><li>Inicio</li></a>
+    <a href="Nosotros.html"title="Sobre Nosotros"><li>Nosotros</li></a>
+  	<a href="Biblioteca.html" title="ver libros"><li><font color="#FFCB1A">Biblioteca</font></li></a>
+  	<a href="Contacto.html" title="Contactenos"><li>Contacto</li></a>
+   	</ul>
+
+</nav>
+
+<div class="articulos">
+
+<article>
+	<h1>El Montero-Pedro Francisco Bonò</h1>
+    	<div class="img">
+        
+        <a href="pedro-francisco-bon-el-montero.pdf"title="Leer pedro-francisco-bon-el-montero gratis." target="_blank"><img src="img/El montero_img.PNG"/></a>
+        
+        <p>
+        Esta novela, publicada en París en 1856 y escrita por Pedro Francisco Bonó, es un retrato poético de la vida dura vida rural dominicana, y de la presencia arrolladora del caudillo, aquel líder campesino que se sentía dueño y señor de las comarcas.  Esta obra constituye  un verdadero tratado sobre las costumbres existentes en el campo dominicano. Describe y descubre las añoranzas, las luchas y las pasiones de los habitantes, sometidos a la voluntad de los caudillos; y cómo esta relación de poder incidió en el imaginario colectivo de esta América nuestra.
+<br /><br />
+El protagonista, un caballero deslumbrado por el brillo de su armadura, a pesar de ser bueno, generoso y amoroso, no consigue comprender y valorar con profundidad las cosas que suceden a su alrededor. Su armadura se va oxidando hasta que deja de brillar y no puede quitársela.
+<br /><br />
+Las hermosas descripciones que aparecen sobre la majestuosidad de nuestros campos, todavía vírgenes de la depredación de la civilización, son verdaderamente impactantes:
+
+El terreno de todos estos sitios, salvo los ya dichos cenagales, está sembrado de esa robusta, rica y variada vegetación de Santo Domingo. Bosques de limoneros, majagua y uveros cubren el litoral con una entrada de doce leguas al interior, y sirven de guardia a una infinidad de puercos montaraces, cuya caza es la ocupación de todos los habitantes que pueblan ese espacio, y el producto de las carnes la única renta que poseen… 
+<br /><br />
+El valor de esta novela, más que literario o novelístico, es el retrato que nos ofrece sobre la dura vida de los campesinos.  Escrito en un lenguaje sencillo, a veces poético, Bonó logra captar la atención del lector no tanto porque la novela cuenta con una trama envolvente, sino por su capacidad descriptiva. Con palabras, el campo dominicano va tomando forma y color a través del verbo prolífero del pensador cibaeño.
+
+
+    </p> 
+       
+        </div>
+        
+    
+    
+	</article>
+    
+</div>
+
+<div class="asides">
+
+<aside>
+	<img src="img/Leer_img.png" width="300" height="240" />
+</aside>
+
+<aside>
+	<video width="300" height="240" controls>
+    	<source src="img/Leer_video.mp4" type="video/mp4"  />
+    
+    </video>
+</aside>
+</aside>
+
+<aside id="sitios">
+	<p>Sitios Relacionados:</p>
+	<ul class="menu">
+            <li id="do"><a href="https://hyslerodriguez123.000webhostapp.com" title="2do A Inf" target="_blank">2do A informatica</a></li>
+        
+        <li id="pvas"><a href="https://pvas.gnomio.com" title="politecnico vicente aquilino santos" target="_blank">P.V.A.S</a></li>
+        
+    	
+    </ul>
+
+</aside>
+
+</div>
+
+<footer>
+	<div class="pie_pagina">
+    
+   	  <div class="menu">
+        
+    
+    
+	<ul class="menu">
+  	<li><a href="index.html" title="Inicio">Inicio</a></li>
+    <li><a href="Nosotros.html"title="Sobre Nosotros">Nosotros</a></li>
+  	<li><a href="Biblioteca.html" title="ver libros">Biblioteca</a></li>
+  	<li><a href="Contacto.html" title="Contactenos">Contacto</a></li>
+   	</ul>
+
+        
+      </div>
+        
+         <div class="redes_sociales">
+        
+       	  <a href="https://www.facebook.com/Book.Digital.Oficial/" target="_blank" title="Facebook"><img src="img/Facebook_icon.png" alt="">Facebook</a>
+       	  <a href="Contacto.html" title="Correo"><img src="img/gmail_icon.png" alt="">Gmail</a>
+          
+          <a href="https://www.instagram.com/digital_books_oficial/" target="_blank" title="instagram"><img src="img/instagram_icono.png" alt="">Instagram</a>
+          
+        </div>
+        
+        <div class="derechos">
+        
+        Todos los derechos reservados &copy;
+        
+        </div>
+        
+    </div>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>
